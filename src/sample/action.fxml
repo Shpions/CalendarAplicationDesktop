@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="298.0" prefWidth="586.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="back" layoutX="59.0" layoutY="227.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="40.0" prefWidth="112.0" text="Back" />
+      <Button fx:id="create2" layoutX="387.0" layoutY="227.0" mnemonicParsing="false" onAction="#createEventAction" prefHeight="40.0" prefWidth="112.0" text="Create" />
+      <DatePicker fx:id="stdate" layoutX="15.0" layoutY="114.0" promptText="Start Date" />
+      <DatePicker fx:id="edate" layoutX="15.0" layoutY="166.0" prefHeight="24.0" prefWidth="162.0" promptText="End date" />
+      <TextField fx:id="description" alignment="CENTER" layoutX="14.0" layoutY="62.0" prefHeight="24.0" prefWidth="315.0" promptText="Description" />
+      <TextField fx:id="title" alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="24.0" prefWidth="315.0" promptText="Title" />
+      <TextArea fx:id="mailist" layoutX="339.0" layoutY="14.0" prefHeight="175.0" prefWidth="182.0" promptText="list of  attenders" />
+      <TextField fx:id="hhstart" layoutX="211.0" layoutY="114.0" prefHeight="24.0" prefWidth="40.0" promptText="hh" />
+      <TextField fx:id="mmstart" layoutX="281.0" layoutY="114.0" prefHeight="24.0" prefWidth="40.0" promptText="mm" />
+      <TextField fx:id="hhdend" layoutX="211.0" layoutY="166.0" prefHeight="24.0" prefWidth="40.0" promptText="hh" />
+      <TextField fx:id="mmend" layoutX="281.0" layoutY="166.0" prefHeight="24.0" prefWidth="40.0" promptText="mm" />
+   </children>
+</Pane>

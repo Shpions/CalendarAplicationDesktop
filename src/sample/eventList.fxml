@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <SplitPane dividerPositions="0.7663316582914573" layoutX="275.0" layoutY="100.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView fx:id="tableview" editable="true" layoutX="55.0" layoutY="14.0" prefHeight="302.0" prefWidth="598.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="titleTab" prefWidth="75.0" text="Title" />
+                      <TableColumn fx:id="descTab" prefWidth="120.0" text="Description" />
+                        <TableColumn fx:id="stdatTab" minWidth="2.0" prefWidth="68.0" text="Start Date" />
+                        <TableColumn fx:id="endDatTab" prefWidth="68.0" text="End Date" />
+                        <TableColumn fx:id="attendersTab" minWidth="0.0" prefWidth="266.0" text="Attenders" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Button fx:id="back" layoutX="72.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="48.0" prefWidth="98.0" text="Back" />
+                  <Button fx:id="edit" layoutX="395.0" layoutY="14.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="98.0" text="Edit Event" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
